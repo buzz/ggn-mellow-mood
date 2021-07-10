@@ -1,0 +1,64 @@
+// breakpoints
+@custom-media --viewport-xs (min-width: 576px)
+@custom-media --viewport-sm (min-width: 768px)
+@custom-media --viewport-md (min-width: 992px)
+@custom-media --viewport-lg (min-width: 1200px)
+@custom-media --viewport-xl (min-width: 1400px)
+
+// https://coolors.co/e63946-d1e0f0-b0cae8-768091-646d7d-5f5661-48424a-1f1c21-151316
+:root
+  --imperial-red: #e63946
+
+  --beau-blue: #d1e0f0
+  --light-steel-blue: #b0cae8
+
+  --slate-gray: #768091
+  --black-coral: #646d7d
+
+  --light-liver: #5f5661
+  --dark-liver: #48424a
+
+  --raisin-black: #1f1c21
+  --eerie-black: #151316
+
+// distances
+:root
+  --width-lg: 1120px
+  --width-xl: 1320px
+  --margin-xs: 3px
+  --margin-sm: 6px
+  --margin-md: 12px
+  --margin-lg: 18px
+  --margin-xl: 24px
+
+// extends
+%fluid-width
+  margin: 0 auto
+
+  @media (--viewport-lg)
+    max-width: var(--width-lg)
+
+  @media (--viewport-xl)
+    max-width: var(--width-xl)
+
+%font-size-sm
+  font-size: 80%
+
+%font-size-lg
+  font-size: 120%
+
+// header text colors
+:root
+  --darkRed: #bf6a6a
+  --darkGreen: #69c077
+  --lightGreen: #d9e473
+.r00, .r01, .r02, .r03
+  color: var(--darkRed)
+.r04, .r05, .r06, .r07, .r08
+  color: var(--lightGreen)
+.r09, .r10, .r20, .r50, .r99
+  color: var(--darkGreen)
+
+// box shadow
+%pop-up-box-shadow
+  box-shadow: 0px 2px 8px rgb(0 0 0 / 50%)

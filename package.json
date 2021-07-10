@@ -1,0 +1,31 @@
+{
+  "name": "ggn-mellow-mood",
+  "version": "1.0.0",
+  "description": "A GGn theme for mellow-mooded folks",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:css && npm run build:fonts",
+    "build:css": "postcss src/index.sss -o dist/style.css",
+    "build:fonts": "node build-fonts.js",
+    "watch": "postcss --watch src/index.sss -o dist/style.css"
+  },
+  "author": "buzz",
+  "license": "CC-BY-SA-4.0",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "autoprefixer": "^9.8.6",
+    "fontawesome-subset": "^2.0.0",
+    "nodemon": "^2.0.12",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.2",
+    "precss": "^4.0.0",
+    "sugarss": "^4.0.1"
+  },
+  "browserslist": [
+    "last 2 versions  ",
+    "> 2%",
+    "Firefox ESR",
+    "IE 10"
+  ]
+}

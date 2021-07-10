@@ -1,0 +1,21 @@
+#wrapper
+  min-height: 100%
+  position: relative
+  height: auto !important
+  overflow: hidden
+  width: 100%
+
+#footer
+  @extend %font-size-sm
+  background-color: var(--dark-liver)
+  margin-top: var(--margin-xl)
+  padding-bottom: var(--margin-xl)
+
+  > *
+    @extend %fluid-width
+
+  #footer_image
+    display: none
+
+.global_buffs
+  transform: scale(.6) translate(0, -30px)

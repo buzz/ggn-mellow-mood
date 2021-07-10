@@ -1,0 +1,101 @@
+#header
+  width: 100%
+
+  ul
+    padding: 0
+    margin: 0
+
+    > li
+      display: inline-block
+      list-style: none
+      margin-right: var(--margin-sm)
+
+      &:last-child
+        margin-right: 0
+
+  #logo
+    display: none
+
+  #userinfo
+    @extend %fluid-width
+    @extend %font-size-sm
+    width: 100%
+
+    #userinfo_username
+      padding: var(--margin-sm) 0
+      position: relative
+      text-align: right
+
+      > li
+        margin-right: var(--margin-xs)
+
+      .brackets
+        @extend %font-size-sm
+
+      .donateico
+        margin-left: var(--margin-sm)
+
+        a
+          color: var(--darkGreen)
+
+          &:before
+            @extend %fa-btc
+            font-weight: normal
+            margin-right: var(--margin-xs)
+
+      .sub
+        @extend %pop-up-box-shadow
+        overflow: visible
+        position: absolute
+        right: 74px
+        text-align: left
+        top: 24px
+        visibility: hidden
+        z-index: 9999999999
+
+        > span
+          display: block
+          padding: 0
+
+          > a
+            background-color: var(--dark-liver)
+            display: inline-block
+            padding: var(--margin-sm) var(--margin-md)
+            width: 160px
+
+            &:hover, &:active
+              background-color: var(--light-liver)
+              color: white
+              text-decoration: none
+
+  #menu
+    background-color: var(--dark-liver)
+    width: 100%
+
+    > ul
+      @extend %fluid-width
+      @extend %font-size-lg
+      text-align: center
+
+      > li > a
+        display: inline-block
+        padding: var(--margin-sm) var(--margin-md)
+
+        &:hover, &:active
+          background-color: var(--light-liver)
+          text-decoration: none
+
+  #searchbars
+    background-color: var(--black-coral)
+    width: 100%
+    padding: var(--margin-sm) 0
+
+    > ul
+      @extend %fluid-width
+      text-align: center
+
+      &:before
+        @extend %font-size-sm
+        content: 'Search:'
+        display: inline-block
+        padding-right: var(--margin-sm)
