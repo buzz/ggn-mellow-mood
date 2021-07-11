@@ -1,12 +1,14 @@
 #header
+  --header-height: 30px
   width: 100%
 
-  ul
+  * > ul
     padding: 0
     margin: 0
 
     > li
       display: inline-block
+      height: var(--header-height)
       list-style: none
       margin-right: var(--margin-sm)
 
@@ -17,13 +19,12 @@
     display: none
 
   #userinfo
-    --height: 30px
     @extend %fluid-width
     @extend %font-size-sm
     align-items: flex-start
     display: flex
     flex-direction: row
-    height: var(--height)
+    height: var(--header-height)
     justify-content: space-between
     overflow: visible
     position: relative
@@ -31,8 +32,8 @@
     width: 100%
 
     > *
-      height: var(--height)
-      line-height: var(--height)
+      height: var(--header-height)
+      line-height: var(--header-height)
 
     #userinfo_stats
       flex-grow: 1
@@ -40,20 +41,74 @@
       padding-right: 0 var(--margin-md) 0 0
 
       #stats_seeding
-        padding-left: var(--margin-lg)
-        background: url(https://gazellegames.net/static/styles/game_room/images/icons/sword_upload.png) no-repeat 0 50%
+        font-size: 0
+
+        a
+          background: url(https://gazellegames.net/static/styles/game_room/images/icons/sword_upload.png) no-repeat 0 50%
+          display: inline-block
+          height: 22px
+          width: 16px
+
+        .stat
+          @extend %font-size-sm
+          padding-left: var(--margin-sm)
 
       #stats_leeching
-        padding-left: var(--margin-lg)
-        background: url(https://gazellegames.net/static/styles/game_room/images/icons/shield_down.png) no-repeat 0 50%
+        font-size: 0
+
+        a
+          background: url(https://gazellegames.net/static/styles/game_room/images/icons/shield_down.png) no-repeat 0 50%
+          display: inline-block
+          height: 22px
+          width: 16px
+
+        .stat
+          @extend %font-size-sm
+          padding-left: var(--margin-sm)
 
       #stats_gold
-        padding-left: var(--margin-lg)
-        background: url(https://gazellegames.net/static/styles/game_room/images/icons/coins.png) no-repeat 0 50%
+        font-size: 0
+
+        a
+          background: url(https://gazellegames.net/static/styles/game_room/images/icons/coins.png) no-repeat 0 50%
+          display: inline-block
+          height: 22px
+          width: 16px
+
+        .stat
+          @extend %font-size-sm
+          padding-left: var(--margin-sm)
 
       #stats_ratio
-        padding-left: var(--margin-lg)
+        font-size: 0
+        padding-left: var(--margin-md)
         background: url(https://gazellegames.net/static/styles/game_room/images/icons/ratio.png) no-repeat 0 50%
+
+        .stat
+          @extend %font-size-sm
+          padding-left: var(--margin-sm)
+
+      #connectable
+        font-size: 0
+
+        .stat
+          @extend %font-size-sm
+          padding-left: var(--margin-sm)
+
+        &:before
+          @extend %font-size-sm
+          content: 'Port:'
+
+      #online_irc
+        font-size: 0
+
+        a:before
+          @extend %font-size-sm
+          content: 'IRC:'
+
+        .stat
+          @extend %font-size-sm
+          padding-left: var(--margin-sm)
 
     #userinfo_minor
       order: 1
@@ -89,7 +144,7 @@
           text-align: right
 
           &:first-of-type
-            margin-top: var(--height)
+            margin-top: var(--header-height)
 
           &:last-child > a
             border-bottom: 1px solid var(--dark-liver)
@@ -141,7 +196,7 @@
         position: absolute
         right: 74px
         text-align: left
-        top: var(--height)
+        top: var(--header-height)
         visibility: hidden
         z-index: 9999
 
@@ -194,8 +249,11 @@
       text-align: center
 
       > li > a
+        font-size: var(--font-size-lg)
         display: inline-block
-        padding: var(--margin-sm) var(--margin-md)
+        padding: 0 var(--margin-md)
+        height: var(--header-height)
+        line-height: var(--header-height)
 
         &:hover, &:active
           background-color: var(--lighter-liver)
@@ -215,3 +273,6 @@
         content: 'Search:'
         display: inline-block
         padding-right: var(--margin-sm)
+
+      li
+        height: auto

@@ -22,6 +22,10 @@
   --color-bg-light: #1f1c21
   --color-bg-body: #151316
 
+  --font-size-base: 16px
+  --font-size-sm: 12px
+  --font-size-lg: 20px
+
 // distances
 :root
   --width-lg: 1120px
@@ -42,14 +46,14 @@
   @media (--viewport-xl)
     max-width: var(--width-xl)
 
-%font-size-sm
-  font-size: 80%
+%font-size-base
+  font-size: var(--font-size-base)
 
-%font-size-md
-  font-size: 100%
+%font-size-sm
+  font-size: var(--font-size-sm)
 
 %font-size-lg
-  font-size: 120%
+  font-size: var(--font-size-lg)
 
 // header text colors
 :root
