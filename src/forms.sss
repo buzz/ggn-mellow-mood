@@ -1,6 +1,105 @@
-.submit input
+.submit input, input[type=submit], input[type=button]
   box-shadow: none !important
 
-input[type=button], input[type=submit]
+input,
+select,
+textarea
   border: 1px solid var(--dark-liver)
   background-color: var(--lightest-liver)
+
+  &:hover
+    background-color: var(--brighter-liver)
+
+  &:focus
+    background-color: var(--brightest-liver)
+
+  &::placeholder
+    color: var(--color-bg-light)
+
+input[type=text],
+input[type=number],
+select,
+textarea
+  width: 100% !important
+
+select
+
+  option, optgroup
+    background-color: var(--brightest-liver) !important
+
+form
+  table
+    width: 100%
+
+    tr
+
+      &.colhead_dark
+        @extend %font-size-lg
+
+      td
+        padding: var(--margin-sm) var(--margin-md) !important
+
+        &.label
+          background-color: transparent !important
+          vertical-align: top !important
+
+        & > ul
+          &:first-child
+            margin-top: 0 !important
+
+          &:last-child
+            margin-bottom: 0 !important
+
+        #platcheckbox td[colspan="5"]
+          background-color: transparent !important
+
+        select
+          width: inherit !important
+
+    #platcheckbox
+      td
+        padding: 0 !important
+
+  .filter_torrents
+
+    &[name=filter]
+      input[name=searchstr]
+        width: inherit !important
+
+    td
+
+      &.label
+        vertical-align: middle !important
+
+      &:nth-child(6)
+        display: table-cell !important
+
+    &.advanced
+
+      .cat_list td
+        padding: var(--margin-sm) var(--margin-md) !important
+
+      #taglist
+        margin-left: 0
+
+        td
+          padding-bottom: 0 !important
+
+    &.basic
+      tr:nth-of-type(2)
+
+        td:nth-of-type(3)
+          width: auto !important
+          position: inherit !important
+          top: 0 !important
+          text-align: right
+
+        td:nth-of-type(4)
+          position: inherit !important
+          top: 0 !important
+
+    input[name=searchstr]
+      width: auto !important
+
+    .submit
+      margin-top: 0 !important

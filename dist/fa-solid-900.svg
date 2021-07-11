@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" ><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><metadata>
+Created by FontForge 20201107 at Tue Mar 16 10:15:04 2021
+ By Robert Madole
+Copyright (c) Font Awesome
+</metadata><!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><defs><font id="FontAwesome5Free-Solid" horiz-adv-x="512" ><font-face 
+    font-family="Font Awesome 5 Free Solid"
+    font-weight="900"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 5 3 0 0 0 0 0 0"
+    ascent="448"
+    descent="-64"
+    bbox="-1.00195 -64.9795 640.104 448.576"
+    underline-thickness="25"
+    underline-position="-50"
+    unicode-range="U+0020-F8FF"
+  /><missing-glyph /><glyph glyph-name="chevron-right" unicode="&#xf054;" horiz-adv-x="320" 
+d="M285.476 175.029l-194.344 -194.344c-9.37305 -9.37207 -24.5684 -9.37207 -33.9404 0l-22.667 22.667c-9.35742 9.35742 -9.375 24.5225 -0.0400391 33.9014l154.021 154.746l-154.021 154.745c-9.33496 9.37891 -9.31738 24.5439 0.0400391 33.9014l22.667 22.667
+c9.37305 9.37207 24.5684 9.37207 33.9404 0l194.343 -194.344c9.37305 -9.37207 9.37305 -24.5674 0.000976562 -33.9404z" /><glyph glyph-name="chevron-down" unicode="&#xf078;" horiz-adv-x="448" 
+d="M207.029 66.5244l-194.344 194.344c-9.37207 9.37305 -9.37207 24.5684 0 33.9404l22.667 22.667c9.35742 9.35742 24.5225 9.375 33.9014 0.0400391l154.746 -154.021l154.745 154.021c9.37891 9.33496 24.5439 9.31738 33.9014 -0.0400391l22.667 -22.667
+c9.37207 -9.37305 9.37207 -24.5684 0 -33.9404l-194.343 -194.344c-9.37305 -9.37207 -24.5684 -9.37207 -33.9414 0z" /></font></defs></svg>

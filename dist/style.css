@@ -72,25 +72,69 @@
   src: url("./fa-brands-400.eot");
   src: url("./fa-brands-400.eot?#iefix") format("embedded-opentype"), url("./fa-brands-400.woff2") format("woff2"), url("./fa-brands-400.woff") format("woff"), url("./fa-brands-400.ttf") format("truetype"), url("./fa-brands-400.svg#fontawesome") format("svg")
 }
+@font-face {
+  font-family: 'FA Solid';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("./fa-solid-900.eot");
+  src: url("./fa-solid-900.eot?#iefix") format("embedded-opentype"), url("./fa-solid-900.woff2") format("woff2"), url("./fa-solid-900.woff") format("woff"), url("./fa-solid-900.ttf") format("truetype"), url("./fa-solid-900.svg#fontawesome") format("svg")
+}
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('oxygen-v10-latin-ext_latin-regular.woff2') format('woff2'), url('oxygen-v10-latin-ext_latin-regular.woff') format('woff')
+}
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''), url('oxygen-v10-latin-ext_latin-700.woff2') format('woff2'), url('oxygen-v10-latin-ext_latin-700.woff') format('woff')
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('ubuntu-v15-latin-ext_latin-regular.woff2') format('woff2'), url('ubuntu-v15-latin-ext_latin-regular.woff') format('woff')
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 400;
+  src: local(''),
+       url('ubuntu-v15-latin-ext_latin-italic.woff2') format('woff2'), url('ubuntu-v15-latin-ext_latin-italic.woff') format('woff')
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('ubuntu-v15-latin-ext_latin-700.woff2') format('woff2'), url('ubuntu-v15-latin-ext_latin-700.woff') format('woff')
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 700;
+  src: local(''),
+       url('ubuntu-v15-latin-ext_latin-700italic.woff2') format('woff2'), url('ubuntu-v15-latin-ext_latin-700italic.woff') format('woff')
+}
 /* breakpoints */
-/* https://coolors.co/e63946-d1e0f0-b0cae8-768091-646d7d-5f5661-48424a-1f1c21-151316 */
 :root {
-  --imperial-red: #e63946;
-  --marigold: #e6a337;
+  --red: #e63946;
+  --orange: #e6a337;
 
-  --beau-blue: #d1e0f0;
-  --light-steel-blue: #b0cae8;
+  --color-font: #d1e0f0;
 
-  --slate-gray: #768091;
-  --black-coral: #646d7d;
-
+  --brightest-liver: #e0dde1;
+  --brighter-liver: #a399a5;
   --lightest-liver: #948896;
   --lighter-liver: #756977;
   --light-liver: #5f5661;
   --dark-liver: #48424a;
 
-  --raisin-black: #1f1c21;
-  --eerie-black: #151316
+  --color-bg-light: #1f1c21;
+  --color-bg-body: #151316
 }
 /* distances */
 :root {
@@ -133,7 +177,8 @@ blockquote {
 }
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box
+          box-sizing: border-box;
+  font-family: Ubuntu
 }
 *,
 *:before,
@@ -143,9 +188,9 @@ html {
 }
 html {
   color: #d1e0f0;
-  color: var(--beau-blue);
+  color: var(--color-font);
   background: linear-gradient(180deg, #151316 0%, #1f1c21 200px);
-  background: linear-gradient(180deg, var(--eerie-black) 0%, var(--raisin-black) 200px);
+  background: linear-gradient(180deg, var(--color-bg-body) 0%, var(--color-bg-light) 200px);
   font-size: 12pt;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
   line-height: 1.44rem
@@ -157,7 +202,7 @@ body {
 .warning,
 .error {
   color: #e63946;
-  color: var(--imperial-red)
+  color: var(--red)
 }
 a {
   text-decoration: none;
@@ -172,6 +217,9 @@ a:hover, a:active {
 }
 input {
   border: 1px solid rgba(0, 0, 0, 0.25)
+}
+.poll {
+  line-height: 0.9rem
 }
 #header {
   width: 100%;
@@ -304,7 +352,7 @@ input {
         position: absolute;
         right: 74px;
         text-align: left;
-        top: 2rem;
+        top: 33px;
         visibility: hidden;
         z-index: 9999;
 }
@@ -531,7 +579,7 @@ input {
   padding: var(--margin-sm) var(--margin-lg);
   clear: both;
   background-color: #e63946;
-  background-color: var(--imperial-red)
+  background-color: var(--red)
 }
 .save_message {
   color: white;
@@ -541,7 +589,7 @@ input {
   padding: var(--margin-sm) var(--margin-lg);
   clear: both;
   background-color: #e6a337;
-  background-color: var(--marigold)
+  background-color: var(--orange)
 }
 #content {
   margin: 0 auto
@@ -578,16 +626,10 @@ input {
     padding-right: 0
   }
 }
-#index #recommended {
-  display: none
-}
 .sidebar {
   padding-left: 18px !important;
   padding-left: var(--margin-lg) !important;
-  width: 35% !important;
-}
-#torrents .sidebar {
-    padding-left: 0 !important
+  width: 35% !important
 }
 .main_column {
   width: 65% !important
@@ -604,13 +646,18 @@ input {
 .box > *:last-child {
     margin-bottom: 0
 }
+.box ul.nobullet {
+    margin-left: 0;
+    padding-left: 0
+}
 .box .head {
+  font-size: 120%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 #torrents .box .head {
       margin-left: 0 !important
@@ -618,6 +665,10 @@ input {
 .box .head > * {
       -ms-flex-negative: 0;
           flex-shrink: 0
+}
+.box .head > ul {
+      margin: 0;
+      padding-left: 0
 }
 .box .head strong {
   font-size: 120%;
@@ -628,40 +679,193 @@ input {
               flex-grow: 1
 }
 .box .head a {
-  font-size: 80%;
-  margin-left: 0 !important
-}
-.box .head #markread {
-      background-image: url(https://gazellegames.net/static/styles/game_room/images/newscheckbox.png);
-      background-repeat: no-repeat;
-      float: left;
-      height: 18px;
-      margin: 0 6px;
-      margin: 0 var(--margin-sm);
-      -webkit-box-ordinal-group: 0;
-          -ms-flex-order: -1;
-              order: -1;
-      width: 18px
-}
-.box .head .newsdate, .box .head .time {
-  font-size: 80%;
-  float: right;
-  margin-left: 12px;
-  margin-left: var(--margin-md)
+      margin-left: 0 !important
 }
 .box .pad {
     margin-top: 12px;
     margin-top: var(--margin-md)
 }
-.submit input {
+.box.pad {
+    padding: 6px 0 6px 6px;
+    padding: var(--margin-sm) 0 var(--margin-sm) var(--margin-sm)
+}
+.submit input, input[type=submit], input[type=button] {
   -webkit-box-shadow: none !important;
           box-shadow: none !important
 }
-input[type=button], input[type=submit] {
+input,
+select,
+textarea {
   border: 1px solid #48424a;
   border: 1px solid var(--dark-liver);
   background-color: #948896;
   background-color: var(--lightest-liver)
+}
+input:hover, select:hover, textarea:hover {
+    background-color: #a399a5;
+    background-color: var(--brighter-liver)
+}
+input:focus, select:focus, textarea:focus {
+    background-color: #e0dde1;
+    background-color: var(--brightest-liver)
+}
+input::-webkit-input-placeholder, select::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #1f1c21;
+    color: var(--color-bg-light)
+}
+input::-moz-placeholder, select::-moz-placeholder, textarea::-moz-placeholder {
+    color: #1f1c21;
+    color: var(--color-bg-light)
+}
+input:-ms-input-placeholder, select:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #1f1c21;
+    color: var(--color-bg-light)
+}
+input::-ms-input-placeholder, select::-ms-input-placeholder, textarea::-ms-input-placeholder {
+    color: #1f1c21;
+    color: var(--color-bg-light)
+}
+input::placeholder, select::placeholder, textarea::placeholder {
+    color: #1f1c21;
+    color: var(--color-bg-light)
+}
+input[type=text],
+input[type=number],
+select,
+textarea {
+  width: 100% !important
+}
+select option, select optgroup {
+    background-color: #e0dde1 !important;
+    background-color: var(--brightest-liver) !important
+}
+form table {
+    width: 100%;
+}
+form table tr.colhead_dark {
+  font-size: 120%
+}
+form table tr td {
+        padding: 6px 12px !important;
+        padding: var(--margin-sm) var(--margin-md) !important
+}
+form table tr td.label {
+          background-color: transparent !important;
+          vertical-align: top !important
+}
+form table tr td > ul:first-child {
+            margin-top: 0 !important
+}
+form table tr td > ul:last-child {
+            margin-bottom: 0 !important
+}
+form table tr td #platcheckbox td[colspan="5"] {
+          background-color: transparent !important
+}
+form table tr td select {
+          width: inherit !important
+}
+form table #platcheckbox td {
+        padding: 0 !important
+}
+form .filter_torrents[name=filter] input[name=searchstr] {
+        width: inherit !important
+}
+form .filter_torrents td.label {
+        vertical-align: middle !important
+}
+form .filter_torrents td:nth-child(6) {
+        display: table-cell !important
+}
+form .filter_torrents.advanced .cat_list td {
+        padding: 6px 12px !important;
+        padding: var(--margin-sm) var(--margin-md) !important
+}
+form .filter_torrents.advanced #taglist {
+        margin-left: 0;
+}
+form .filter_torrents.advanced #taglist td {
+          padding-bottom: 0 !important
+}
+form .filter_torrents.basic tr:nth-of-type(2) td:nth-of-type(3) {
+          width: auto !important;
+          position: inherit !important;
+          top: 0 !important;
+          text-align: right
+}
+form .filter_torrents.basic tr:nth-of-type(2) td:nth-of-type(4) {
+          position: inherit !important;
+          top: 0 !important
+}
+form .filter_torrents input[name=searchstr] {
+      width: auto !important
+}
+form .filter_torrents .submit {
+      margin-top: 0 !important
+}
+#index #recommended {
+    display: none
+}
+#index .sidebar #freeleech li.group_torrent {
+  font-size: 80%;
+  color: inherit !important
+}
+#torrents #index .sidebar {
+      padding-left: 0 !important
+}
+#index .box#upcoming_calendar .day-label {
+  font-size: 100%
+}
+#index .box#upcoming_calendar .event_end_time {
+        float: right
+}
+#index .box#slides ul li {
+        position: relative;
+}
+#index .box#slides ul li a {
+          position: absolute;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+                  transform: translateX(-50%);
+          width: auto
+}
+#index .box#slides > ul {
+        margin: 0;
+        width: auto;
+}
+#index .box#slides > ul > li {
+          position: inherit;
+          text-align: center;
+}
+#index .box#slides > ul > li > a {
+            -webkit-transform: none;
+                    transform: none;
+            position: inherit
+}
+#index .box#slides .prev, #index .box#slides .next {
+        margin: 6px;
+        margin: var(--margin-sm)
+}
+#index .box#blogposts ul > li > a {
+  font-size: 80%
+}
+#index .box .head #markread {
+        background-image: url(https://gazellegames.net/static/styles/game_room/images/newscheckbox.png);
+        background-repeat: no-repeat;
+        float: left;
+        height: 18px;
+        margin: 0 6px;
+        margin: 0 var(--margin-sm);
+        -webkit-box-ordinal-group: 0;
+            -ms-flex-order: -1;
+                order: -1;
+        width: 18px
+}
+#index .box .head .newsdate, #index .box .head .time {
+  font-size: 80%;
+  float: right;
+  margin-left: 12px;
+  margin-left: var(--margin-md)
 }
 #torrents #content form[name="filter"] {
     margin: 0 !important;
@@ -693,4 +897,148 @@ input[type=button], input[type=submit] {
 #torrents .main_column .torrent_table tr.group_torrent td.edition_info {
     background-color: #5f5661 !important;
     background-color: var(--light-liver) !important
+}
+#torrents .linkbox {
+    margin: 12px 0;
+    margin: var(--margin-md) 0;
+    text-align: center;
+}
+#torrents .linkbox a > strong {
+      font-weight: normal !important
+}
+#torrents #seeding_table tr:nth-child(odd) {
+        background: #151316;
+        background: var(--color-bg-body)
+}
+#torrents #seeding_table tr.colhead {
+        background-color: #5f5661 !important;
+        background-color: var(--light-liver) !important;
+        font-weight: bold
+}
+#torrents #seeding_table tr td {
+        padding: 6px 12px !important;
+        padding: var(--margin-sm) var(--margin-md) !important
+}
+#torrents #torrent_table .show_torrents_link {
+      display: inline-block;
+      height: 25px;
+      width: 25px
+}
+#torrents #torrent_table div.hide_torrents > a:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+      -webkit-font-feature-settings: normal;
+              font-feature-settings: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: 'FA Solid';
+  content: "\f078"
+}
+#torrents #torrent_table div.show_torrents > a:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+      -webkit-font-feature-settings: normal;
+              font-feature-settings: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: 'FA Solid';
+  content: "\f054"
+}
+#torrents #torrent_table tr.colhead {
+        background-color: #5f5661 !important;
+        background-color: var(--light-liver) !important;
+        font-weight: bold
+}
+#torrents #torrent_table tr td {
+        padding: 6px 12px !important;
+        padding: var(--margin-sm) var(--margin-md) !important;
+        background-color: transparent !important
+}
+#torrents #torrent_table tr.group.rowa {
+          background-color: #151316 !important;
+          background-color: var(--color-bg-body) !important
+}
+#torrents #torrent_table tr.group.rowb {
+          background-color: transparent !important
+}
+#torrents #torrent_table tr.group td#displayname #groupplatform, #torrents #torrent_table tr.group td#displayname #groupname {
+  font-size: 100%;
+}
+#torrents #torrent_table tr.group td#displayname #groupplatform a, #torrents #torrent_table tr.group td#displayname #groupname a {
+  font-size: 120%
+}
+#torrents #torrent_table tr.group_torrent td {
+  font-size: 80%;
+  padding: 0 12px !important;
+  padding: 0 var(--margin-md) !important
+}
+#torrents #torrent_table tr.group_torrent td.edition_info {
+            padding-left: 8rem !important
+}
+#torrents #torrent_table tr.group_torrent td[colspan="4"] {
+            padding-left: 9rem !important;
+}
+#torrents #torrent_table tr.group_torrent td[colspan="4"] > span:first-child > a:last-of-type {
+              margin-right: 2px
+}
+#torrents #torrent_table tr.group_torrent td[colspan="4"] > a:nth-child(2) {
+              font-weight: bold;
+}
+#torrents #torrent_table tr.group_torrent td[colspan="4"] > a:nth-child(2) .torrent_info_tags {
+                font-weight: normal
+}
+#torrents .torrent_details .groupoptions:hover {
+  font-size: 80%;
+  width: auto;
+}
+#torrents .torrent_details .groupoptions:hover a {
+        background-color: #5f5661 !important;
+        background-color: var(--light-liver) !important;
+        border-bottom: none !important;
+        border-left: 1px solid #48424a;
+        border-left: 1px solid var(--dark-liver);
+        border-right: 1px solid #48424a;
+        border-right: 1px solid var(--dark-liver);
+        white-space: nowrap
+}
+#torrents .torrent_details .groupoptions:hover a:first-of-type {
+          border-top: 1px solid #48424a;
+          border-top: 1px solid var(--dark-liver)
+}
+#torrents .torrent_details .groupoptions:hover a:last-of-type {
+          border-bottom: 1px solid #48424a !important;
+          border-bottom: 1px solid var(--dark-liver) !important
+}
+#torrents .torrent_details .groupoptions:hover a:hover {
+          background-color: #756977 !important;
+          background-color: var(--lighter-liver) !important
+}
+#torrents .torrent_details .torrent_table tr.colhead_dark {
+          background-color: #5f5661 !important;
+          background-color: var(--light-liver) !important;
+          font-weight: bold
+}
+#torrents .torrent_details .torrent_table .filelist_table {
+        width: 100%;
+}
+#torrents .torrent_details .torrent_table .filelist_table tr.colhead_dark {
+            background-color: #5f5661 !important;
+            background-color: var(--light-liver) !important;
+            font-weight: bold
+}
+#torrents .torrent_details .torrent_table .filelist_table tr:nth-child(odd) {
+            background: #151316;
+            background: var(--color-bg-body)
+}
+#torrents .torrent_details .similar_div .head .flright form {
+        white-space: nowrap;
+}
+#torrents .torrent_details .similar_div .head .flright form input[type=text] {
+          width: auto !important
 }

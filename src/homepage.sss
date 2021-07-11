@@ -1,0 +1,67 @@
+#index
+
+  #recommended
+    display: none
+
+  .sidebar
+    #freeleech li.group_torrent
+      @extend %font-size-sm
+      color: inherit !important
+
+    #torrents &
+      padding-left: 0 !important
+
+  .box
+
+    &#upcoming_calendar
+
+      .day-label
+        @extend %font-size-md
+
+      .event_end_time
+        float: right
+
+    &#slides
+      ul li
+        position: relative
+
+        a
+          position: absolute
+          left: 50%
+          transform: translateX(-50%)
+          width: auto
+
+      > ul
+        margin: 0
+        width: auto
+
+        > li
+          position: inherit
+          text-align: center
+
+          > a
+            transform: none
+            position: inherit
+
+      .prev, .next
+        margin: var(--margin-sm)
+
+    &#blogposts
+
+      ul > li > a
+        @extend %font-size-sm
+
+    .head
+      #markread
+        background-image: url(https://gazellegames.net/static/styles/game_room/images/newscheckbox.png)
+        background-repeat: no-repeat
+        float: left
+        height: 18px
+        margin: 0 var(--margin-sm)
+        order: -1
+        width: 18px
+
+      .newsdate, .time
+        @extend %font-size-sm
+        float: right
+        margin-left: var(--margin-md)

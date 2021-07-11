@@ -1,5 +1,6 @@
 html
   box-sizing: border-box
+  font-family: Ubuntu
 
 *,
 *:before,
@@ -7,8 +8,8 @@ html
   box-sizing: inherit
 
 html
-  color: var(--beau-blue)
-  background: linear-gradient(180deg, var(--eerie-black) 0%, var(--raisin-black) 200px)
+  color: var(--color-font)
+  background: linear-gradient(180deg, var(--color-bg-body) 0%, var(--color-bg-light) 200px)
   font-size: 12pt
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5)
   line-height: 1.44rem
@@ -19,7 +20,7 @@ body
 .invalid,
 .warning,
 .error
-  color: var(--imperial-red)
+  color: var(--red)
 
 a
   text-decoration: none
@@ -34,3 +35,6 @@ a
 
 input
   border: 1px solid rgba(0, 0, 0, 0.25)
+
+.poll
+  line-height: 0.9rem

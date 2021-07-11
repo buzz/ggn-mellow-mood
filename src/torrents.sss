@@ -30,3 +30,138 @@
 
   .main_column .torrent_table tr.group_torrent td.edition_info
     background-color: var(--light-liver) !important
+
+  .linkbox
+    margin: var(--margin-md) 0
+    text-align: center
+
+    a > strong
+      font-weight: normal !important
+
+  #seeding_table
+    @extend %torrent-table
+
+    tr
+
+      &:nth-child(odd)
+        background: var(--color-bg-body)
+
+      &.colhead
+        background-color: var(--light-liver) !important
+        font-weight: bold
+
+      td
+        padding: var(--margin-sm) var(--margin-md) !important
+
+  #torrent_table
+    @extend %torrent-table
+
+    .show_torrents_link
+      display: inline-block
+      height: 25px
+      width: 25px
+
+    div.hide_torrents > a:before
+      @extend %fa-chevron-down
+
+    div.show_torrents > a:before
+      @extend %fa-chevron-right
+
+    tr
+
+      &.colhead
+        background-color: var(--light-liver) !important
+        font-weight: bold
+
+      td
+        padding: var(--margin-sm) var(--margin-md) !important
+        background-color: transparent !important
+
+      &.group
+
+        &.rowa
+          background-color: var(--color-bg-body) !important
+
+        &.rowb
+          background-color: transparent !important
+
+        td
+
+          &#displayname
+
+            #groupplatform, #groupname
+              @extend %font-size-md
+
+              a
+                @extend %font-size-lg
+
+      &.group_torrent
+
+        td
+          @extend %font-size-sm
+          padding: 0 var(--margin-md) !important
+
+          &.edition_info
+            padding-left: 8rem !important
+
+          &[colspan="4"]
+            padding-left: 9rem !important
+
+            > span:first-child > a:last-of-type
+              margin-right: 2px
+
+            > a:nth-child(2)
+              font-weight: bold
+
+              .torrent_info_tags
+                font-weight: normal
+
+  .torrent_details
+
+    .groupoptions:hover
+      @extend %font-size-sm
+      width: auto
+
+      a
+        background-color: var(--light-liver) !important
+        border-bottom: none !important
+        border-left: 1px solid var(--dark-liver)
+        border-right: 1px solid var(--dark-liver)
+        white-space: nowrap
+
+        &:first-of-type
+          border-top: 1px solid var(--dark-liver)
+
+        &:last-of-type
+          border-bottom: 1px solid var(--dark-liver) !important
+
+        &:hover
+          background-color: var(--lighter-liver) !important
+
+    .torrent_table
+
+      tr
+
+        &.colhead_dark
+          background-color: var(--light-liver) !important
+          font-weight: bold
+
+      .filelist_table
+        width: 100%
+
+        tr
+
+          &.colhead_dark
+            background-color: var(--light-liver) !important
+            font-weight: bold
+
+          &:nth-child(odd)
+            background: var(--color-bg-body)
+
+    .similar_div .head .flright
+
+      form
+        white-space: nowrap
+
+        input[type=text]
+          width: auto !important
