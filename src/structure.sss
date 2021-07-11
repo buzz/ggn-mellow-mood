@@ -19,3 +19,90 @@
 
 .global_buffs
   transform: scale(.6) translate(0, -30px)
+
+%message
+  color: white
+  margin-bottom: var(--margin-md)
+  padding: var(--margin-sm) var(--margin-lg)
+  clear: both
+
+.error_message
+  @extend %message
+  background-color: var(--imperial-red)
+
+.save_message
+  @extend %message
+  background-color: var(--marigold)
+
+#content
+  @extend %fluid-width
+  margin-bottom: var(--margin-xl)
+  margin-top: var(--margin-xl)
+  min-height: 100%
+  overflow: hidden
+  padding-left: var(--margin-md)
+  padding-right: var(--margin-md)
+  position: relative
+  width: 100%
+
+  @media (--viewport-lg)
+    padding-left: 0
+    padding-right: 0
+
+#index #recommended
+  display: none
+
+.sidebar
+  padding-left: var(--margin-lg) !important
+  width: 35% !important
+
+  #torrents &
+    padding-left: 0 !important
+
+.main_column
+  width: 65% !important
+
+.box
+  background: var(--dark-liver)
+  margin: 0 0 var(--margin-lg) !important
+  padding: var(--margin-md)
+  width: 100% !important
+
+  > *:last-child
+    margin-bottom: 0
+
+  .head
+    align-items: center
+    display: flex
+
+    #torrents &
+      margin-left: 0 !important
+
+    > *
+      flex-shrink: 0
+
+    strong
+      @extend %font-size-lg
+      flex-shrink: 1
+      flex-grow: 1
+
+    a
+      @extend %font-size-sm
+      margin-left: 0 !important
+
+    #markread
+      background-image: url(https://gazellegames.net/static/styles/game_room/images/newscheckbox.png)
+      background-repeat: no-repeat
+      float: left
+      height: 18px
+      margin: 0 var(--margin-sm)
+      order: -1
+      width: 18px
+
+    .newsdate, .time
+      @extend %font-size-sm
+      float: right
+      margin-left: var(--margin-md)
+
+  .pad
+    margin-top: var(--margin-md)

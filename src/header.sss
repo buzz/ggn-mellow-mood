@@ -17,14 +17,45 @@
     display: none
 
   #userinfo
+    --height: 30px
     @extend %fluid-width
     @extend %font-size-sm
+    align-items: center
+    display: flex
+    flex-direction: row
+    height: var(--height)
+    justify-content: space-between
+    overflow: visible
+    position: relative
+    white-space: nowrap
     width: 100%
 
+    #userinfo_stats
+      order: 0
+      padding: var(--margin-sm) var(--margin-md) var(--margin-sm) 0
+
+      #stats_seeding
+        padding-left: var(--margin-lg)
+        background: url(https://gazellegames.net/static/styles/game_room/images/icons/sword_upload.png) no-repeat 0 50%
+
+      #stats_leeching
+        padding-left: var(--margin-lg)
+        background: url(https://gazellegames.net/static/styles/game_room/images/icons/shield_down.png) no-repeat 0 50%
+
+      #stats_gold
+        padding-left: var(--margin-lg)
+        background: url(https://gazellegames.net/static/styles/game_room/images/icons/coins.png) no-repeat 0 50%
+
+      #stats_ratio
+        padding-left: var(--margin-lg)
+        background: url(https://gazellegames.net/static/styles/game_room/images/icons/ratio.png) no-repeat 0 50%
+
     #userinfo_username
-      padding: var(--margin-sm) 0
+      order: 1
+      padding: var(--margin-sm) 0 var(--margin-sm) var(--margin-md)
       position: relative
       text-align: right
+      margin-right: 40px
 
       > li
         margin-right: var(--margin-xs)
@@ -44,32 +75,107 @@
             margin-right: var(--margin-xs)
 
       .sub
-        @extend %pop-up-box-shadow
         overflow: visible
         position: absolute
         right: 74px
         text-align: left
-        top: 24px
+        top: 2rem
         visibility: hidden
-        z-index: 9999999999
+        z-index: 9999
 
         > span
           display: block
           padding: 0
 
+          &:last-child > a
+            border-bottom: 1px solid var(--dark-liver)
+
           > a
-            background-color: var(--dark-liver)
+            background-color: var(--light-liver)
+            border-left: 1px solid var(--dark-liver)
+            border-right: 1px solid var(--dark-liver)
             display: inline-block
             padding: var(--margin-sm) var(--margin-md)
             width: 160px
 
             &:hover, &:active
-              background-color: var(--light-liver)
+              background-color: var(--lighter-liver)
               color: white
               text-decoration: none
 
+    #userinfo_minor
+      background: url(https://gazellegames.net/static/styles/game_room/images/icons/userinfo_minor_icon.png) no-repeat scroll right -1px
+      height: var(--height)
+      order: 2
+      overflow: hidden
+      position: absolute
+      right: 0
+      top: 0
+      width: 40px
+      z-index: 10000
+
+      > li
+        display: none
+        margin: 0
+
+      &.highlighted
+        background-position-y: -58px
+
+      &:hover
+        background-position: 110px -31px
+        height: 260px
+        overflow: visible
+        width: 140px
+
+        &.highlighted
+          background-position: 110px -58px
+
+        > li
+          display: block
+
+          &:nth-child(2)
+            margin-top: var(--height)
+
+          &:last-child > a
+            border-bottom: 1px solid var(--dark-liver)
+
+          > a
+            background-color: var(--light-liver)
+            border-left: 1px solid var(--dark-liver)
+            border-right: 1px solid var(--dark-liver)
+            display: inline-block
+            height: var(--height)
+            padding: var(--margin-sm) var(--margin-md)
+            width: 140px
+
+            &:hover, &:active
+              background-color: var(--lighter-liver)
+              color: white
+              text-decoration: none
+
+            &.highlight
+              background-color: var(--darkGreen)
+
+  .notification_bubble
+    background-color: #e3d71f
+    border-radius: 5px
+    box-shadow: 1px 1px 5px #000
+    color: black
+    display: inline-table
+    font-size: .8em
+    font-weight: bold
+    right: 18px
+    line-height: 12px
+    margin-top: 6px
+    max-width: 16px
+    padding: 0px 6px
+    position: absolute
+    text-align: center
+    text-shadow: none
+    top: 0
+
   #menu
-    background-color: var(--dark-liver)
+    background-color: var(--light-liver)
     width: 100%
 
     > ul
@@ -82,11 +188,11 @@
         padding: var(--margin-sm) var(--margin-md)
 
         &:hover, &:active
-          background-color: var(--light-liver)
+          background-color: var(--lighter-liver)
           text-decoration: none
 
   #searchbars
-    background-color: var(--black-coral)
+    background-color: var(--dark-liver)
     width: 100%
     padding: var(--margin-sm) 0
 
