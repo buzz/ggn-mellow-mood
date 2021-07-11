@@ -124,7 +124,8 @@
   --red: #e63946;
   --orange: #e6a337;
 
-  --color-font: #d1e0f0;
+  --color-text: #d1e0f0;
+  --color-text-highlight: white;
 
   --brightest-liver: #e0dde1;
   --brighter-liver: #a399a5;
@@ -188,7 +189,7 @@ html {
 }
 html {
   color: #d1e0f0;
-  color: var(--color-font);
+  color: var(--color-text);
   background: linear-gradient(180deg, #151316 0%, #1f1c21 200px);
   background: linear-gradient(180deg, var(--color-bg-body) 0%, var(--color-bg-light) 200px);
   font-size: 12pt;
@@ -260,9 +261,9 @@ input {
 }
 #header #userinfo {
     font-size: 80%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -279,12 +280,19 @@ input {
     white-space: nowrap;
     width: 100%;
 }
+#header #userinfo > * {
+      height: var(--height);
+      line-height: var(--height)
+}
 #header #userinfo #userinfo_stats {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
       -webkit-box-ordinal-group: 1;
           -ms-flex-order: 0;
               order: 0;
-      padding: 6px 12px 6px 0;
-      padding: var(--margin-sm) var(--margin-md) var(--margin-sm) 0;
+      padding-right: 0 12px 0 0;
+      padding-right: 0 var(--margin-md) 0 0;
 }
 #header #userinfo #userinfo_stats #stats_seeding {
         padding-left: 18px;
@@ -306,12 +314,89 @@ input {
         padding-left: var(--margin-lg);
         background: url(https://gazellegames.net/static/styles/game_room/images/icons/ratio.png) no-repeat 0 50%
 }
-#header #userinfo #userinfo_username {
+#header #userinfo #userinfo_minor {
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
               order: 1;
-      padding: 6px 0 6px 12px;
-      padding: var(--margin-sm) 0 var(--margin-sm) var(--margin-md);
+      overflow: hidden;
+      position: relative;
+      right: 0;
+      top: 0;
+      width: 20px;
+      z-index: 10000
+}
+#header #userinfo #userinfo_minor:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+      -webkit-font-feature-settings: normal;
+              font-feature-settings: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: 'FA Solid';
+  content: "\f007";
+  position: absolute;
+  right: 0;
+  top: 9px
+}
+#header #userinfo #userinfo_minor > li {
+        display: none;
+        margin-right: -120px
+}
+#header #userinfo #userinfo_minor.highlighted:before {
+        color: #e63946;
+        color: var(--red)
+}
+#header #userinfo #userinfo_minor:hover {
+        height: 260px;
+        overflow: visible
+}
+#header #userinfo #userinfo_minor:hover:before {
+          color: white
+}
+#header #userinfo #userinfo_minor:hover > li {
+          display: block;
+          text-align: right
+}
+#header #userinfo #userinfo_minor:hover > li:first-of-type {
+            margin-top: var(--height)
+}
+#header #userinfo #userinfo_minor:hover > li:last-child > a {
+            border-bottom: 1px solid #48424a;
+            border-bottom: 1px solid var(--dark-liver)
+}
+#header #userinfo #userinfo_minor:hover > li > a {
+            background-color: #5f5661;
+            background-color: var(--light-liver);
+            border-left: 1px solid #48424a;
+            border-left: 1px solid var(--dark-liver);
+            border-right: 1px solid #48424a;
+            border-right: 1px solid var(--dark-liver);
+            display: inline-block;
+            line-height: 20px;
+            padding: 6px 12px;
+            padding: var(--margin-sm) var(--margin-md);
+            text-align: left;
+            width: 140px
+}
+#header #userinfo #userinfo_minor:hover > li > a:hover, #header #userinfo #userinfo_minor:hover > li > a:active {
+              background-color: #756977;
+              background-color: var(--lighter-liver);
+              color: white;
+              text-decoration: none
+}
+#header #userinfo #userinfo_minor:hover > li > a.highlight {
+              background-color: #69c077;
+              background-color: var(--darkGreen)
+}
+#header #userinfo #userinfo_username {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
+      margin: 0 0 0 12px !important;
+      margin: 0 0 0 var(--margin-md) !important;
       position: relative;
       text-align: right;
       margin-right: 40px;
@@ -352,7 +437,7 @@ input {
         position: absolute;
         right: 74px;
         text-align: left;
-        top: 33px;
+        top: var(--height);
         visibility: hidden;
         z-index: 9999;
 }
@@ -372,6 +457,7 @@ input {
             border-right: 1px solid #48424a;
             border-right: 1px solid var(--dark-liver);
             display: inline-block;
+            line-height: 20px;
             padding: 6px 12px;
             padding: var(--margin-sm) var(--margin-md);
             width: 160px
@@ -382,68 +468,6 @@ input {
               color: white;
               text-decoration: none
 }
-#header #userinfo #userinfo_minor {
-      background: url(https://gazellegames.net/static/styles/game_room/images/icons/userinfo_minor_icon.png) no-repeat scroll right -1px;
-      height: var(--height);
-      -webkit-box-ordinal-group: 3;
-          -ms-flex-order: 2;
-              order: 2;
-      overflow: hidden;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 40px;
-      z-index: 10000;
-}
-#header #userinfo #userinfo_minor > li {
-        display: none;
-        margin: 0
-}
-#header #userinfo #userinfo_minor.highlighted {
-        background-position-y: -58px
-}
-#header #userinfo #userinfo_minor:hover {
-        background-position: 110px -31px;
-        height: 260px;
-        overflow: visible;
-        width: 140px
-}
-#header #userinfo #userinfo_minor:hover.highlighted {
-          background-position: 110px -58px
-}
-#header #userinfo #userinfo_minor:hover > li {
-          display: block
-}
-#header #userinfo #userinfo_minor:hover > li:nth-child(2) {
-            margin-top: var(--height)
-}
-#header #userinfo #userinfo_minor:hover > li:last-child > a {
-            border-bottom: 1px solid #48424a;
-            border-bottom: 1px solid var(--dark-liver)
-}
-#header #userinfo #userinfo_minor:hover > li > a {
-            background-color: #5f5661;
-            background-color: var(--light-liver);
-            border-left: 1px solid #48424a;
-            border-left: 1px solid var(--dark-liver);
-            border-right: 1px solid #48424a;
-            border-right: 1px solid var(--dark-liver);
-            display: inline-block;
-            height: var(--height);
-            padding: 6px 12px;
-            padding: var(--margin-sm) var(--margin-md);
-            width: 140px
-}
-#header #userinfo #userinfo_minor:hover > li > a:hover, #header #userinfo #userinfo_minor:hover > li > a:active {
-              background-color: #756977;
-              background-color: var(--lighter-liver);
-              color: white;
-              text-decoration: none
-}
-#header #userinfo #userinfo_minor:hover > li > a.highlight {
-              background-color: #69c077;
-              background-color: var(--darkGreen)
-}
 #header .notification_bubble {
     background-color: #e3d71f;
     border-radius: 5px;
@@ -453,7 +477,7 @@ input {
     display: inline-table;
     font-size: .8em;
     font-weight: bold;
-    right: 18px;
+    right: 7px;
     line-height: 12px;
     margin-top: 6px;
     max-width: 16px;
