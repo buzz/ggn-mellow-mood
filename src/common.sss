@@ -9,21 +9,20 @@
   --red: #e63946
   --orange: #e6a337
 
-  --control-bg-active: #e0dde1 // control-bg-active
-  --control-bg-hover: #a399a5 // control-bg-hover
-  --control-bg: #948896  // control-bg
+  --color-control-bg: rgb(217, 4, 41)
+  --color-control-bg-hover: color-mod(var(--color-control-bg) tint(20%))
+  --color-control-bg-active: color-mod(var(--color-control-bg) tint(40%))
 
-  --lighter-liver: #756977 // light-menu-bg-hover
-  --light-liver: #5f5661 // light-menu-bg
-  --dark-liver: #48424a // panel-bg
+  --color-panel-bg: rgb(66, 75, 92)
+  --color-panel-light-bg: color-mod(var(--color-panel-bg) tint(20%))
+  --color-panel-lighter-bg: color-mod(var(--color-panel-bg) tint(40%))
 
-  --color-bg-light: #1f1c21
-  --color-bg-body: #151316
+  --color-bg-body: rgb(43, 45, 66)
+  --color-bg-light: color-mod(var(--color-bg-body) l(10%))
 
-  --color-text: white
-  --color-text-highlight: white
+  --color-text: rgb(237, 242, 244)
   --color-text-link: white
-  --color-text-link-highlight: rgba(255, 255, 255, 0.9)
+  --color-text-link-hover: color-mod(var(--color-text-link) l(-10%))
 
   --font-size-base: 16px
   --font-size-xs: 11px
@@ -67,5 +66,5 @@ img
   min-width: auto !important
 
 blockquote
-  background-color: var(--light-liver)
+  background-color: var(--color-panel-light-bg)
   padding: var(--margin-md) var(--margin-lg)
