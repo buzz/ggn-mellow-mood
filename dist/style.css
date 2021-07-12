@@ -64,6 +64,173 @@
 .jquery-lightbox-move {
   z-index: 999999999999999999999999999999 !important
 }
+#bb_bold, #bb_und, #bb_ita, #bb_img, #bb_link, #bb_strk, #bb_h1, #bb_h2, #bb_h3, #bb_h4, #bb_h5, #bb_h6, #bb_color, #bb_tex, #bb_quote, #bb_list, #bb_spoil, #bb_cent, #bb_lef, #bb_righ, #bb_pre, #bb_youtube {
+  display: inline-block;
+  height: 16px;
+  width: 16px
+}
+span.size1 {
+    font-size: 0.75em;
+    line-height: 1em
+}
+span.size2 {
+    font-size: 1em;
+    line-height: 1em
+}
+h4 {
+  font-size: 1em;
+  line-height: 1em
+}
+span.size3, h3 {
+  font-size: 1.25em;
+  line-height: 1em
+}
+span.size4, h2 {
+  font-size: 1.5em;
+  line-height: 1em
+}
+span.size5 {
+    font-size: 1.75em;
+    line-height: 1em
+}
+span.size6 {
+    font-size: 2em;
+    line-height: 1em
+}
+span.size7 {
+    font-size: 2.25em;
+    line-height: 1em
+}
+span.size8 {
+    font-size: 2.5em;
+    line-height: 1em
+}
+span.size9 {
+    font-size: 2.75em;
+    line-height: 1em
+}
+span.size10 {
+    font-size: 3em;
+    line-height: 1em
+}
+span.size4 iframe, span.size4 .twitter_post, span.size4 video, span.size4 img {
+      float: left;
+      padding: 0px 15px 15px 0px !important;
+      -webkit-box-shadow: none !important;
+              box-shadow: none !important
+}
+span.size5 iframe, span.size5 .twitter_post, span.size5 video, span.size5 img {
+      float: right;
+      padding: 0px 0px 15px 15px !important;
+      -webkit-box-shadow: none !important;
+              box-shadow: none !important
+}
+span.size4 .twitter-tweet {
+    padding: 0px 15px 15px 0px !important
+}
+span.size5 .twitter-tweet {
+    padding: 0px 0px 15px 15px !important
+}
+/* ../images, videos, twitter with size=4 code will float left, size=5 will float right */
+#bb_bold {
+  background-image: url('https://gazellegames.net/static/styles/game_room//images/icons/text_bold.png')
+}
+#bb_und {
+  background-image: url('https://gazellegames.net/static/styles/game_room//images/icons/text_underline.png')
+}
+#bb_ita {
+  background-image: url('https://gazellegames.net/static/styles/game_room//images/icons/text_italic.png')
+}
+#bb_img {
+  background-image: url('https://gazellegames.net/static/styles/game_room//images/icons/images.png')
+}
+#bb_link {
+  background-image: url('https://gazellegames.net/static/styles/game_room//images/icons/link.png')
+}
+#bb_strk {
+  background-image: url('https://gazellegames.net/static/styles/game_room//images/icons/text_strikethrough.png')
+}
+#bb_h1 {
+  background-image: url('https://gazellegames.net/static/styles/game_room//images/icons/text_heading_1.png')
+}
+#bb_h2 {
+  background-image: url('https://gazellegames.net/static/styles/game_room//images/icons/text_heading_2.png')
+}
+#bb_h3 {
+  background-image: url('https://gazellegames.net/static/styles/game_room//images/icons/text_heading_3.png')
+}
+#bb_h4 {
+  background-image: url('https://gazellegames.net/static/styles/game_room//images/icons/text_heading_4.png')
+}
+#bb_h5 {
+  background-image: url('https://gazellegames.net/static/styles/game_room//images/icons/text_heading_5.png')
+}
+#bb_h6 {
+  background-image: url('https://gazellegames.net/static/styles/game_room//images/icons/text_heading_6.png')
+}
+#bb_color {
+  background-image: url('https://gazellegames.net/static/styles/game_room//images/icons/color_wheel.png')
+}
+#bb_tex {
+  background-image: url('https://gazellegames.net/static/styles/game_room//images/icons/font.png')
+}
+#bb_quote {
+  background-image: url('https://gazellegames.net/static/styles/game_room//images/icons/user_comment.png')
+}
+#bb_list {
+  background-image: url('https://gazellegames.net/static/styles/game_room//images/icons/text_list_bullets.png')
+}
+#bb_spoil {
+  background-image: url('https://gazellegames.net/static/styles/game_room//images/icons/eye.png')
+}
+#bb_cent {
+  background-image: url('https://gazellegames.net/static/styles/game_room//images/icons/text_align_center.png')
+}
+#bb_lef {
+  background-image: url('https://gazellegames.net/static/styles/game_room//images/icons/text_align_left.png')
+}
+#bb_righ {
+  background-image: url('https://gazellegames.net/static/styles/game_room//images/icons/text_align_right.png')
+}
+#bb_pre {
+  background-image: url('https://gazellegames.net/static/styles/game_room//images/icons/page_white_text.png')
+}
+#bb_youtube {
+  background-image: url('https://gazellegames.net/static/styles/game_room//images/icons/monitor.png')
+}
+.bbbutt {
+  background-color: #EEEEEE;
+  border: medium solid #365C80;
+  padding: 5px;
+  margin: 5px auto;
+  list-style: none;
+  display: block;
+  cursor: default;
+  width: 550px;
+}
+.bbbutt li {
+    display: inline;
+    margin-right: 2px;
+}
+.bbbutt li a {
+      border: none;
+      display: inline-block;
+      margin-bottom: -2px
+}
+.bbbutt li select {
+      background-color: var(--white);
+      color: var(--black);
+      padding: auto 0;
+      margin: 0;
+      height: auto
+}
+code {
+  background-color: var(--mediumBlue);
+  padding: 1px 5px
+}
+blockquote code {
+  outline: 1px solid black
+}
 @font-face {
   font-family: 'FA Brands';
   font-style: normal;
@@ -124,18 +291,30 @@
   --red: #e63946;
   --orange: #e6a337;
 
-  --color-text: #d1e0f0;
-  --color-text-highlight: white;
+  --color-panel-bg: rgb(66, 75, 92);
+  --color-panel-light-bg: rgb(104, 111, 125);
+  --color-panel-lighter-bg: rgb(142, 147, 157);
 
-  --brightest-liver: #e0dde1;
-  --brighter-liver: #a399a5;
-  --lightest-liver: #948896;
-  --lighter-liver: #756977;
-  --light-liver: #5f5661;
-  --dark-liver: #48424a;
+  --color-panel-light-border-light: rgb(119, 125, 138);
+  --color-panel-light-border-dark: rgb(88, 94, 106);
+  --color-panel-border-light: rgb(85, 93, 108);
+  --color-panel-border-dark: rgb(56, 64, 78);
 
-  --color-bg-light: #1f1c21;
-  --color-bg-body: #151316
+  --color-control-bg: rgb(89, 97, 112);
+  --color-control-bg-hover: rgb(122, 128, 140);
+  --color-control-bg-active: rgb(155, 160, 169);
+
+  --color-bg-body: rgb(43, 45, 66);
+  --color-bg-light: hsl(234.7826086956522, 21.1009174312%, 10%);
+
+  --color-text: rgb(237, 242, 244);
+  --color-text-link: white;
+  --color-text-link-hover: hsl(0, 0%, 90%);
+
+  --font-size-base: 16px;
+  --font-size-xs: 11px;
+  --font-size-sm: 14px;
+  --font-size-lg: 18px
 }
 /* distances */
 :root {
@@ -145,7 +324,8 @@
   --margin-sm: 6px;
   --margin-md: 12px;
   --margin-lg: 18px;
-  --margin-xl: 24px
+  --margin-xl: 24px;
+  --border-radius: 5px
 }
 /* extends */
 /* header text colors */
@@ -166,21 +346,6 @@
   color: #69c077;
   color: var(--darkGreen)
 }
-img {
-  max-width: 100% !important;
-  min-width: auto !important
-}
-blockquote {
-  background-color: #5f5661;
-  background-color: var(--light-liver);
-  padding: 12px 18px;
-  padding: var(--margin-md) var(--margin-lg)
-}
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: Ubuntu
-}
 *,
 *:before,
 *:after {
@@ -188,15 +353,19 @@ html {
           box-sizing: inherit
 }
 html {
-  color: #d1e0f0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: rgb(237, 242, 244);
   color: var(--color-text);
-  background: linear-gradient(180deg, #151316 0%, #1f1c21 200px);
-  background: linear-gradient(180deg, var(--color-bg-body) 0%, var(--color-bg-light) 200px);
-  font-size: 12pt;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
-  line-height: 1.44rem
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-size: var(--font-size-base);
+  line-height: 1.44rem;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5)
 }
 body {
+  background-color: rgb(66, 75, 92);
+  background-color: var(--color-panel-bg);
   margin: 0
 }
 .invalid,
@@ -206,11 +375,13 @@ body {
   color: var(--red)
 }
 a {
-  text-decoration: none;
-  color: white
+  text-decoration: underline;
+  color: white;
+  color: var(--color-text-link)
 }
 a:hover, a:active {
-    color: white;
+    color: hsl(0, 0%, 90%);
+    color: var(--color-text-link-hover);
     text-decoration: underline
 }
 :focus {
@@ -219,31 +390,42 @@ a:hover, a:active {
 input {
   border: 1px solid rgba(0, 0, 0, 0.25)
 }
+img {
+  max-width: 100% !important;
+  min-width: auto !important
+}
+blockquote {
+  background-color: rgb(104, 111, 125);
+  background-color: var(--color-panel-light-bg);
+  padding: 12px 18px;
+  padding: var(--margin-md) var(--margin-lg)
+}
 .poll {
   line-height: 0.9rem
 }
 #header {
+  --header-height: 30px;
   width: 100%;
 }
-#header ul {
+#header * > ul {
     padding: 0;
     margin: 0;
 }
-#header ul > li {
+#header * > ul > li {
       display: inline-block;
+      height: var(--header-height);
       list-style: none;
       margin-right: 6px;
       margin-right: var(--margin-sm)
 }
-#header ul > li:last-child {
+#header * > ul > li:last-child {
         margin-right: 0
 }
 #header #logo {
     display: none
 }
 #header #userinfo {
-    --height: 30px;
-    margin: 0 auto
+  margin: 0 auto
 }
 @media (min-width: 1200px) {
 
@@ -260,29 +442,30 @@ input {
   }
 }
 #header #userinfo {
-    font-size: 80%;
+  font-size: 14px;
+  font-size: var(--font-size-sm);
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: var(--height);
+  height: var(--header-height);
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    overflow: visible;
-    position: relative;
-    white-space: nowrap;
-    width: 100%;
+  overflow: visible;
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
 }
 #header #userinfo > * {
-      height: var(--height);
-      line-height: var(--height)
+      height: var(--header-height);
+      line-height: var(--header-height)
 }
 #header #userinfo #userinfo_stats {
       -webkit-box-flex: 1;
@@ -295,26 +478,92 @@ input {
       padding-right: 0 var(--margin-md) 0 0;
 }
 #header #userinfo #userinfo_stats #stats_seeding {
-        padding-left: 18px;
-        padding-left: var(--margin-lg);
-        background: url(https://gazellegames.net/static/styles/game_room/images/icons/sword_upload.png) no-repeat 0 50%
+        font-size: 0;
+}
+#header #userinfo #userinfo_stats #stats_seeding a {
+          background: url(https://gazellegames.net/static/styles/game_room/images/icons/sword_upload.png) no-repeat 0 50%;
+          display: inline-block;
+          height: 22px;
+          width: 16px
+}
+#header #userinfo #userinfo_stats #stats_seeding .stat {
+          font-size: 14px;
+          font-size: var(--font-size-sm);
+          padding-left: 6px;
+          padding-left: var(--margin-sm)
 }
 #header #userinfo #userinfo_stats #stats_leeching {
-        padding-left: 18px;
-        padding-left: var(--margin-lg);
-        background: url(https://gazellegames.net/static/styles/game_room/images/icons/shield_down.png) no-repeat 0 50%
+        font-size: 0;
+}
+#header #userinfo #userinfo_stats #stats_leeching a {
+          background: url(https://gazellegames.net/static/styles/game_room/images/icons/shield_down.png) no-repeat 0 50%;
+          display: inline-block;
+          height: 22px;
+          width: 16px
+}
+#header #userinfo #userinfo_stats #stats_leeching .stat {
+          font-size: 14px;
+          font-size: var(--font-size-sm);
+          padding-left: 6px;
+          padding-left: var(--margin-sm)
 }
 #header #userinfo #userinfo_stats #stats_gold {
-        padding-left: 18px;
-        padding-left: var(--margin-lg);
-        background: url(https://gazellegames.net/static/styles/game_room/images/icons/coins.png) no-repeat 0 50%
+        font-size: 0;
+}
+#header #userinfo #userinfo_stats #stats_gold a {
+          background: url(https://gazellegames.net/static/styles/game_room/images/icons/coins.png) no-repeat 0 50%;
+          display: inline-block;
+          height: 22px;
+          width: 16px
+}
+#header #userinfo #userinfo_stats #stats_gold .stat {
+          font-size: 14px;
+          font-size: var(--font-size-sm);
+          padding-left: 6px;
+          padding-left: var(--margin-sm)
 }
 #header #userinfo #userinfo_stats #stats_ratio {
-        padding-left: 18px;
-        padding-left: var(--margin-lg);
-        background: url(https://gazellegames.net/static/styles/game_room/images/icons/ratio.png) no-repeat 0 50%
+        font-size: 0;
+        padding-left: 12px;
+        padding-left: var(--margin-md);
+        background: url(https://gazellegames.net/static/styles/game_room/images/icons/ratio.png) no-repeat 0 50%;
+}
+#header #userinfo #userinfo_stats #stats_ratio .stat {
+          font-size: 14px;
+          font-size: var(--font-size-sm);
+          padding-left: 6px;
+          padding-left: var(--margin-sm)
+}
+#header #userinfo #userinfo_stats #connectable {
+        font-size: 0;
+}
+#header #userinfo #userinfo_stats #connectable .stat {
+          font-size: 14px;
+          font-size: var(--font-size-sm);
+          padding-left: 6px;
+          padding-left: var(--margin-sm)
+}
+#header #userinfo #userinfo_stats #connectable:before {
+          font-size: 14px;
+          font-size: var(--font-size-sm);
+          content: 'Port:'
+}
+#header #userinfo #userinfo_stats #online_irc {
+        font-size: 0;
+}
+#header #userinfo #userinfo_stats #online_irc a:before {
+          font-size: 14px;
+          font-size: var(--font-size-sm);
+          content: 'IRC:'
+}
+#header #userinfo #userinfo_stats #online_irc .stat {
+          font-size: 14px;
+          font-size: var(--font-size-sm);
+          padding-left: 6px;
+          padding-left: var(--margin-sm)
 }
 #header #userinfo #userinfo_minor {
+      min-width: 28px;
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
               order: 1;
@@ -322,7 +571,7 @@ input {
       position: relative;
       right: 0;
       top: 0;
-      width: 20px;
+      width: 28px;
       z-index: 10000
 }
 #header #userinfo #userinfo_minor:before {
@@ -338,12 +587,12 @@ input {
   font-family: 'FA Solid';
   content: "\f007";
   position: absolute;
-  right: 0;
+  right: 8px;
   top: 9px
 }
 #header #userinfo #userinfo_minor > li {
         display: none;
-        margin-right: -120px
+        margin-right: -112px
 }
 #header #userinfo #userinfo_minor.highlighted:before {
         color: #e63946;
@@ -361,29 +610,30 @@ input {
           text-align: right
 }
 #header #userinfo #userinfo_minor:hover > li:first-of-type {
-            margin-top: var(--height)
+            margin-top: var(--header-height)
 }
 #header #userinfo #userinfo_minor:hover > li:last-child > a {
-            border-bottom: 1px solid #48424a;
-            border-bottom: 1px solid var(--dark-liver)
+            border-bottom: 1px solid rgb(66, 75, 92);
+            border-bottom: 1px solid var(--color-panel-bg)
 }
 #header #userinfo #userinfo_minor:hover > li > a {
-            background-color: #5f5661;
-            background-color: var(--light-liver);
-            border-left: 1px solid #48424a;
-            border-left: 1px solid var(--dark-liver);
-            border-right: 1px solid #48424a;
-            border-right: 1px solid var(--dark-liver);
+            background-color: rgb(104, 111, 125);
+            background-color: var(--color-panel-light-bg);
+            border-left: 1px solid rgb(66, 75, 92);
+            border-left: 1px solid var(--color-panel-bg);
+            border-right: 1px solid rgb(66, 75, 92);
+            border-right: 1px solid var(--color-panel-bg);
             display: inline-block;
             line-height: 20px;
             padding: 6px 12px;
             padding: var(--margin-sm) var(--margin-md);
             text-align: left;
+            text-decoration: none;
             width: 140px
 }
 #header #userinfo #userinfo_minor:hover > li > a:hover, #header #userinfo #userinfo_minor:hover > li > a:active {
-              background-color: #756977;
-              background-color: var(--lighter-liver);
+              background-color: rgb(142, 147, 157);
+              background-color: var(--color-panel-lighter-bg);
               color: white;
               text-decoration: none
 }
@@ -395,18 +645,19 @@ input {
       -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
               order: 2;
-      margin: 0 0 0 12px !important;
-      margin: 0 0 0 var(--margin-md) !important;
       position: relative;
       text-align: right;
-      margin-right: 40px;
 }
 #header #userinfo #userinfo_username > li {
         margin-right: 3px;
         margin-right: var(--margin-xs)
 }
+#header #userinfo #userinfo_username > li:last-of-type {
+          margin-right: 0
+}
 #header #userinfo #userinfo_username .brackets {
-  font-size: 80%
+        font-size: 11px;
+        font-size: var(--font-size-xs)
 }
 #header #userinfo #userinfo_username .donateico {
         margin-left: 6px;
@@ -435,9 +686,9 @@ input {
 #header #userinfo #userinfo_username .sub {
         overflow: visible;
         position: absolute;
-        right: 74px;
+        right: 90px;
         text-align: left;
-        top: var(--height);
+        top: var(--header-height);
         visibility: hidden;
         z-index: 9999;
 }
@@ -446,25 +697,26 @@ input {
           padding: 0
 }
 #header #userinfo #userinfo_username .sub > span:last-child > a {
-            border-bottom: 1px solid #48424a;
-            border-bottom: 1px solid var(--dark-liver)
+            border-bottom: 1px solid rgb(66, 75, 92);
+            border-bottom: 1px solid var(--color-panel-bg)
 }
 #header #userinfo #userinfo_username .sub > span > a {
-            background-color: #5f5661;
-            background-color: var(--light-liver);
-            border-left: 1px solid #48424a;
-            border-left: 1px solid var(--dark-liver);
-            border-right: 1px solid #48424a;
-            border-right: 1px solid var(--dark-liver);
+            background-color: rgb(104, 111, 125);
+            background-color: var(--color-panel-light-bg);
+            border-left: 1px solid rgb(66, 75, 92);
+            border-left: 1px solid var(--color-panel-bg);
+            border-right: 1px solid rgb(66, 75, 92);
+            border-right: 1px solid var(--color-panel-bg);
             display: inline-block;
             line-height: 20px;
             padding: 6px 12px;
             padding: var(--margin-sm) var(--margin-md);
+            text-decoration: none;
             width: 160px
 }
 #header #userinfo #userinfo_username .sub > span > a:hover, #header #userinfo #userinfo_username .sub > span > a:active {
-              background-color: #756977;
-              background-color: var(--lighter-liver);
+              background-color: rgb(142, 147, 157);
+              background-color: var(--color-panel-lighter-bg);
               color: white;
               text-decoration: none
 }
@@ -488,8 +740,12 @@ input {
     top: 0
 }
 #header #menu {
-    background-color: #5f5661;
-    background-color: var(--light-liver);
+    background-color: rgb(104, 111, 125);
+    background-color: var(--color-panel-light-bg);
+    border-bottom: 1px solid rgb(88, 94, 106);
+    border-bottom: 1px solid var(--color-panel-light-border-dark);
+    border-top: 1px solid rgb(119, 125, 138);
+    border-top: 1px solid var(--color-panel-light-border-light);
     width: 100%;
 }
 #header #menu > ul {
@@ -510,25 +766,35 @@ input {
   }
 }
 #header #menu > ul {
-  font-size: 120%;
+  font-size: 18px;
+  font-size: var(--font-size-lg);
   text-align: center;
 }
 #header #menu > ul > li > a {
+        font-size: 18px;
+        font-size: var(--font-size-lg);
         display: inline-block;
-        padding: 6px 12px;
-        padding: var(--margin-sm) var(--margin-md)
+        padding: 0 12px;
+        padding: 0 var(--margin-md);
+        height: var(--header-height);
+        line-height: var(--header-height);
+        text-decoration: none
 }
 #header #menu > ul > li > a:hover, #header #menu > ul > li > a:active {
-          background-color: #756977;
-          background-color: var(--lighter-liver);
+          background-color: rgb(142, 147, 157);
+          background-color: var(--color-panel-lighter-bg);
           text-decoration: none
 }
 #header #searchbars {
-    background-color: #48424a;
-    background-color: var(--dark-liver);
+    background-color: rgb(66, 75, 92);
+    background-color: var(--color-panel-bg);
+    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.4);
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgb(56, 64, 78);
+    border-bottom: 1px solid var(--color-panel-border-dark);
     width: 100%;
-    padding: 6px 0;
-    padding: var(--margin-sm) 0;
+    padding: 6px 0 calc(6px - 1px) 0;
+    padding: var(--margin-sm) 0 calc(var(--margin-sm) - 1px) 0;
 }
 #header #searchbars > ul {
   margin: 0 auto
@@ -551,38 +817,47 @@ input {
   text-align: center
 }
 #header #searchbars > ul:before {
-  font-size: 80%;
-  content: 'Search:';
-  display: inline-block;
-  padding-right: 6px;
-  padding-right: var(--margin-sm)
+        font-size: 14px;
+        font-size: var(--font-size-sm);
+        content: 'Search:';
+        display: inline-block;
+        padding-right: 6px;
+        padding-right: var(--margin-sm)
+}
+#header #searchbars > ul li {
+        height: auto
 }
 #wrapper {
-  min-height: 100%;
-  position: relative;
+  background: linear-gradient(180deg, rgb(43, 45, 66) 0%, hsl(234.7826086956522, 21.1009174312%, 10%) 200px);
+  background: linear-gradient(180deg, var(--color-bg-body) 0%, var(--color-bg-light) 200px);
   height: auto !important;
+  min-height: 100%;
   overflow: hidden;
+  position: relative;
   width: 100%
 }
 #footer {
-  font-size: 80%;
-  background-color: #48424a;
-  background-color: var(--dark-liver);
+  font-size: 14px;
+  font-size: var(--font-size-sm);
+  background-color: rgb(66, 75, 92);
+  background-color: var(--color-panel-bg);
   margin-top: 24px;
   margin-top: var(--margin-xl);
-  padding-bottom: 24px;
-  padding-bottom: var(--margin-xl);
+  padding: 24px 12px;
+  padding: var(--margin-xl) var(--margin-md);
 }
 #footer > * {
   margin: 0 auto
 }
 @media (min-width: 1200px) {
+
   #footer > * {
     max-width: 1120px;
     max-width: var(--width-lg)
   }
 }
 @media (min-width: 1400px) {
+
   #footer > * {
     max-width: 1320px;
     max-width: var(--width-xl)
@@ -659,8 +934,22 @@ input {
   width: 65% !important
 }
 .box {
-  background: #48424a;
-  background: var(--dark-liver);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  background: rgb(66, 75, 92);
+  background: var(--color-panel-bg);
+  border-bottom-color: rgb(56, 64, 78);
+  border-bottom-color: var(--color-panel-border-dark);
+  border-left-color: rgb(85, 93, 108);
+  border-left-color: var(--color-panel-border-light);
+  border-radius: 5px;
+  border-radius: var(--border-radius);
+  border-right-color: rgb(56, 64, 78);
+  border-right-color: var(--color-panel-border-dark);
+  border-style: solid;
+  border-top-color: rgb(85, 93, 108);
+  border-top-color: var(--color-panel-border-light);
+  border-width: 1px;
   margin: 0 0 18px !important;
   margin: 0 0 var(--margin-lg) !important;
   padding: 12px;
@@ -675,13 +964,14 @@ input {
     padding-left: 0
 }
 .box .head {
-  font-size: 120%;
+    font-size: 18px;
+    font-size: var(--font-size-lg);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 #torrents .box .head {
       margin-left: 0 !important
@@ -695,7 +985,8 @@ input {
       padding-left: 0
 }
 .box .head strong {
-  font-size: 120%;
+      font-size: 18px;
+      font-size: var(--font-size-lg);
       -ms-flex-negative: 1;
           flex-shrink: 1;
       -webkit-box-flex: 1;
@@ -720,37 +1011,37 @@ input {
 input,
 select,
 textarea {
-  border: 1px solid #48424a;
-  border: 1px solid var(--dark-liver);
-  background-color: #948896;
-  background-color: var(--lightest-liver)
+  border: 1px solid rgb(66, 75, 92);
+  border: 1px solid var(--color-panel-bg);
+  background-color: rgb(89, 97, 112);
+  background-color: var(--color-control-bg)
 }
 input:hover, select:hover, textarea:hover {
-    background-color: #a399a5;
-    background-color: var(--brighter-liver)
+    background-color: rgb(122, 128, 140);
+    background-color: var(--color-control-bg-hover)
 }
 input:focus, select:focus, textarea:focus {
-    background-color: #e0dde1;
-    background-color: var(--brightest-liver)
+    background-color: rgb(155, 160, 169);
+    background-color: var(--color-control-bg-active)
 }
 input::-webkit-input-placeholder, select::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    color: #1f1c21;
+    color: hsl(234.7826086956522, 21.1009174312%, 10%);
     color: var(--color-bg-light)
 }
 input::-moz-placeholder, select::-moz-placeholder, textarea::-moz-placeholder {
-    color: #1f1c21;
+    color: hsl(234.7826086956522, 21.1009174312%, 10%);
     color: var(--color-bg-light)
 }
 input:-ms-input-placeholder, select:-ms-input-placeholder, textarea:-ms-input-placeholder {
-    color: #1f1c21;
+    color: hsl(234.7826086956522, 21.1009174312%, 10%);
     color: var(--color-bg-light)
 }
 input::-ms-input-placeholder, select::-ms-input-placeholder, textarea::-ms-input-placeholder {
-    color: #1f1c21;
+    color: hsl(234.7826086956522, 21.1009174312%, 10%);
     color: var(--color-bg-light)
 }
 input::placeholder, select::placeholder, textarea::placeholder {
-    color: #1f1c21;
+    color: hsl(234.7826086956522, 21.1009174312%, 10%);
     color: var(--color-bg-light)
 }
 input[type=text],
@@ -760,14 +1051,15 @@ textarea {
   width: 100% !important
 }
 select option, select optgroup {
-    background-color: #e0dde1 !important;
-    background-color: var(--brightest-liver) !important
+    background-color: rgb(155, 160, 169) !important;
+    background-color: var(--color-control-bg-active) !important
 }
 form table {
     width: 100%;
 }
 form table tr.colhead_dark {
-  font-size: 120%
+        font-size: 18px;
+        font-size: var(--font-size-lg)
 }
 form table tr td {
         padding: 6px 12px !important;
@@ -831,17 +1123,26 @@ form .filter_torrents .submit {
     display: none
 }
 #index .sidebar #freeleech li.group_torrent {
-  font-size: 80%;
-  color: inherit !important
+      font-size: 14px;
+      font-size: var(--font-size-sm);
+      color: inherit !important
 }
 #torrents #index .sidebar {
       padding-left: 0 !important
 }
 #index .box#upcoming_calendar .day-label {
-  font-size: 100%
+        font-size: 16px;
+        font-size: var(--font-size-base);
+        text-decoration: none
 }
 #index .box#upcoming_calendar .event_end_time {
-        float: right
+        float: right;
+        font-size: 14px;
+        font-size: var(--font-size-sm)
+}
+#index .box#upcoming_calendar .event_day {
+        font-size: 14px;
+        font-size: var(--font-size-sm)
 }
 #index .box#slides ul li {
         position: relative;
@@ -849,9 +1150,10 @@ form .filter_torrents .submit {
 #index .box#slides ul li a {
           position: absolute;
           left: 50%;
+          text-align: center;
           -webkit-transform: translateX(-50%);
                   transform: translateX(-50%);
-          width: auto
+          width: 260px
 }
 #index .box#slides > ul {
         margin: 0;
@@ -871,7 +1173,8 @@ form .filter_torrents .submit {
         margin: var(--margin-sm)
 }
 #index .box#blogposts ul > li > a {
-  font-size: 80%
+        font-size: 14px;
+        font-size: var(--font-size-sm)
 }
 #index .box .head #markread {
         background-image: url(https://gazellegames.net/static/styles/game_room/images/newscheckbox.png);
@@ -886,69 +1189,78 @@ form .filter_torrents .submit {
         width: 18px
 }
 #index .box .head .newsdate, #index .box .head .time {
-  font-size: 80%;
-  float: right;
-  margin-left: 12px;
-  margin-left: var(--margin-md)
+        font-size: 14px;
+        font-size: var(--font-size-sm);
+        float: right;
+        margin-left: 12px;
+        margin-left: var(--margin-md)
 }
-#torrents #content form[name="filter"] {
+body#torrents #content form[name="filter"] {
     margin: 0 !important;
     width: 100% !important;
 }
-#torrents #content form[name="filter"] h3 {
-      border-bottom: none !important
+body#torrents #content form[name="filter"] h3 {
+      border-bottom: none !important;
+      left: 0;
+      margin-bottom: 12px;
+      margin-bottom: var(--margin-md);
+      width: 100%
 }
-#torrents #content form[name="filter"] .box > table {
+body#torrents #content form[name="filter"] .box > table {
         width: 100%
 }
-#torrents #content form[name="filter"] .box.cat_list {
+body#torrents #content form[name="filter"] .box.cat_list {
         margin: 12px 0;
         margin: var(--margin-md) 0
 }
-#torrents .box.screenshots_div img {
+body#torrents .sidebar {
+    padding-left: 0 !important
+}
+body#torrents .box.screenshots_div img {
       max-width: 150px !important
 }
-#torrents .box .body blockquote:last-of-type {
+body#torrents .box .body blockquote:last-of-type {
       max-height: 48px
 }
-#torrents .box .body blockquote:last-of-type:hover {
+body#torrents .box .body blockquote:last-of-type:hover {
         max-height: 1500px
 }
-#torrents .groupoptions {
+body#torrents .groupoptions {
     right: 0 !important;
-    top: 27px !important
+    top: 27px !important;
+    width: 172px !important
 }
-#torrents .main_column .torrent_table tr.group_torrent td.edition_info {
-    background-color: #5f5661 !important;
-    background-color: var(--light-liver) !important
+body#torrents .main_column .torrent_table tr.group_torrent td.edition_info {
+    background-color: rgb(104, 111, 125) !important;
+    background-color: var(--color-panel-light-bg) !important
 }
-#torrents .linkbox {
+body#torrents .linkbox {
     margin: 12px 0;
     margin: var(--margin-md) 0;
     text-align: center;
 }
-#torrents .linkbox a > strong {
+body#torrents .linkbox a > strong {
       font-weight: normal !important
 }
-#torrents #seeding_table tr:nth-child(odd) {
-        background: #151316;
+body#torrents #seeding_table tr:nth-child(odd) {
+        background: rgb(43, 45, 66);
         background: var(--color-bg-body)
 }
-#torrents #seeding_table tr.colhead {
-        background-color: #5f5661 !important;
-        background-color: var(--light-liver) !important;
+body#torrents #seeding_table tr.colhead {
+        background-color: rgb(104, 111, 125) !important;
+        background-color: var(--color-panel-light-bg) !important;
         font-weight: bold
 }
-#torrents #seeding_table tr td {
+body#torrents #seeding_table tr td {
         padding: 6px 12px !important;
         padding: var(--margin-sm) var(--margin-md) !important
 }
-#torrents #torrent_table .show_torrents_link {
+body#torrents #torrent_table .show_torrents_link {
       display: inline-block;
       height: 25px;
       width: 25px
 }
-#torrents #torrent_table div.hide_torrents > a:before {
+body#torrents #torrent_table div.hide_torrents > a:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -961,7 +1273,7 @@ form .filter_torrents .submit {
   font-family: 'FA Solid';
   content: "\f078"
 }
-#torrents #torrent_table div.show_torrents > a:before {
+body#torrents #torrent_table div.show_torrents > a:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -974,95 +1286,133 @@ form .filter_torrents .submit {
   font-family: 'FA Solid';
   content: "\f054"
 }
-#torrents #torrent_table tr.colhead {
-        background-color: #5f5661 !important;
-        background-color: var(--light-liver) !important;
+body#torrents #torrent_table tr.colhead {
+        background-color: rgb(104, 111, 125) !important;
+        background-color: var(--color-panel-light-bg) !important;
         font-weight: bold
 }
-#torrents #torrent_table tr td {
+body#torrents #torrent_table tr td {
         padding: 6px 12px !important;
         padding: var(--margin-sm) var(--margin-md) !important;
         background-color: transparent !important
 }
-#torrents #torrent_table tr.group.rowa {
-          background-color: #151316 !important;
+body#torrents #torrent_table tr.group.rowa {
+          background-color: rgb(43, 45, 66) !important;
           background-color: var(--color-bg-body) !important
 }
-#torrents #torrent_table tr.group.rowb {
+body#torrents #torrent_table tr.group.rowb {
           background-color: transparent !important
 }
-#torrents #torrent_table tr.group td#displayname #groupplatform, #torrents #torrent_table tr.group td#displayname #groupname {
-  font-size: 100%;
+body#torrents #torrent_table tr.group td#displayname #groupplatform, body#torrents #torrent_table tr.group td#displayname #groupname {
+              font-size: 16px;
+              font-size: var(--font-size-base);
 }
-#torrents #torrent_table tr.group td#displayname #groupplatform a, #torrents #torrent_table tr.group td#displayname #groupname a {
-  font-size: 120%
+body#torrents #torrent_table tr.group td#displayname #groupplatform a, body#torrents #torrent_table tr.group td#displayname #groupname a {
+                font-size: 18px;
+                font-size: var(--font-size-lg)
 }
-#torrents #torrent_table tr.group_torrent td {
-  font-size: 80%;
-  padding: 0 12px !important;
-  padding: 0 var(--margin-md) !important
+body#torrents #torrent_table tr.group_torrent td {
+          font-size: 14px;
+          font-size: var(--font-size-sm);
+          padding: 0 12px !important;
+          padding: 0 var(--margin-md) !important
 }
-#torrents #torrent_table tr.group_torrent td.edition_info {
+body#torrents #torrent_table tr.group_torrent td.edition_info {
             padding-left: 8rem !important
 }
-#torrents #torrent_table tr.group_torrent td[colspan="4"] {
+body#torrents #torrent_table tr.group_torrent td[colspan="4"] {
             padding-left: 9rem !important;
 }
-#torrents #torrent_table tr.group_torrent td[colspan="4"] > span:first-child > a:last-of-type {
+body#torrents #torrent_table tr.group_torrent td[colspan="4"] > span:first-child > a:last-of-type {
               margin-right: 2px
 }
-#torrents #torrent_table tr.group_torrent td[colspan="4"] > a:nth-child(2) {
+body#torrents #torrent_table tr.group_torrent td[colspan="4"] > a:nth-child(2) {
               font-weight: bold;
 }
-#torrents #torrent_table tr.group_torrent td[colspan="4"] > a:nth-child(2) .torrent_info_tags {
+body#torrents #torrent_table tr.group_torrent td[colspan="4"] > a:nth-child(2) .torrent_info_tags {
                 font-weight: normal
 }
-#torrents .torrent_details .groupoptions:hover {
-  font-size: 80%;
-  width: auto;
+body#torrents .torrent_details .groupoptions {
+      font-size: 14px;
+      font-size: var(--font-size-sm)
 }
-#torrents .torrent_details .groupoptions:hover a {
-        background-color: #5f5661 !important;
-        background-color: var(--light-liver) !important;
-        border-bottom: none !important;
-        border-left: 1px solid #48424a;
-        border-left: 1px solid var(--dark-liver);
-        border-right: 1px solid #48424a;
-        border-right: 1px solid var(--dark-liver);
-        white-space: nowrap
+body#torrents .torrent_details .groupoptions:hover {
+        width: auto;
 }
-#torrents .torrent_details .groupoptions:hover a:first-of-type {
-          border-top: 1px solid #48424a;
-          border-top: 1px solid var(--dark-liver)
+body#torrents .torrent_details .groupoptions:hover a {
+          background-color: rgb(104, 111, 125) !important;
+          background-color: var(--color-panel-light-bg) !important;
+          border-bottom: none !important;
+          border-left: 1px solid rgb(66, 75, 92);
+          border-left: 1px solid var(--color-panel-bg);
+          border-right: 1px solid rgb(66, 75, 92);
+          border-right: 1px solid var(--color-panel-bg);
+          text-decoration: none;
+          white-space: nowrap
 }
-#torrents .torrent_details .groupoptions:hover a:last-of-type {
-          border-bottom: 1px solid #48424a !important;
-          border-bottom: 1px solid var(--dark-liver) !important
+body#torrents .torrent_details .groupoptions:hover a:first-of-type {
+            border-top: 1px solid rgb(66, 75, 92);
+            border-top: 1px solid var(--color-panel-bg)
 }
-#torrents .torrent_details .groupoptions:hover a:hover {
-          background-color: #756977 !important;
-          background-color: var(--lighter-liver) !important
+body#torrents .torrent_details .groupoptions:hover a:last-of-type {
+            border-bottom: 1px solid rgb(66, 75, 92) !important;
+            border-bottom: 1px solid var(--color-panel-bg) !important
 }
-#torrents .torrent_details .torrent_table tr.colhead_dark {
-          background-color: #5f5661 !important;
-          background-color: var(--light-liver) !important;
+body#torrents .torrent_details .groupoptions:hover a:hover {
+            background-color: rgb(142, 147, 157) !important;
+            background-color: var(--color-panel-lighter-bg) !important
+}
+body#torrents .torrent_details .torrent_table tr.colhead_dark {
+          background-color: rgb(104, 111, 125) !important;
+          background-color: var(--color-panel-light-bg) !important;
           font-weight: bold
 }
-#torrents .torrent_details .torrent_table .filelist_table {
+body#torrents .torrent_details .torrent_table .filelist_table {
         width: 100%;
 }
-#torrents .torrent_details .torrent_table .filelist_table tr.colhead_dark {
-            background-color: #5f5661 !important;
-            background-color: var(--light-liver) !important;
+body#torrents .torrent_details .torrent_table .filelist_table tr.colhead_dark {
+            background-color: rgb(104, 111, 125) !important;
+            background-color: var(--color-panel-light-bg) !important;
             font-weight: bold
 }
-#torrents .torrent_details .torrent_table .filelist_table tr:nth-child(odd) {
-            background: #151316;
+body#torrents .torrent_details .torrent_table .filelist_table tr:nth-child(odd) {
+            background: rgb(43, 45, 66);
             background: var(--color-bg-body)
 }
-#torrents .torrent_details .similar_div .head .flright form {
+body#torrents .torrent_details .similar_div .head .flright form {
         white-space: nowrap;
 }
-#torrents .torrent_details .similar_div .head .flright form input[type=text] {
+body#torrents .torrent_details .similar_div .head .flright form input[type=text] {
           width: auto !important
+}
+body#inbox form#searchbox input[name=search] {
+    width: auto !important
+}
+body#inbox #messageform h3 {
+      margin-bottom: 0;
+      margin-top: 0
+}
+body#user input[name=styleurl] {
+    margin-left: 6px;
+    margin-left: var(--margin-sm);
+    width: auto !important
+}
+body#user #userform > table td:first-of-type {
+        padding-left: 0 !important
+}
+body#user #userform > table td:last-of-type {
+        padding-right: 0 !important
+}
+body#staff h3:first-of-type {
+    color: var(--color-font);
+    font-size: 18px;
+    font-size: var(--font-size-lg);
+    border-bottom: none;
+    width: 100%
+}
+body#calendar .main_column {
+    width: 100% !important;
+}
+body#calendar .main_column .calendar {
+      width: 100%
 }
