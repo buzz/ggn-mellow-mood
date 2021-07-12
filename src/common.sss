@@ -9,13 +9,18 @@
   --red: #e63946
   --orange: #e6a337
 
-  --color-control-bg: rgb(217, 4, 41)
-  --color-control-bg-hover: color-mod(var(--color-control-bg) tint(20%))
-  --color-control-bg-active: color-mod(var(--color-control-bg) tint(40%))
-
   --color-panel-bg: rgb(66, 75, 92)
   --color-panel-light-bg: color-mod(var(--color-panel-bg) tint(20%))
   --color-panel-lighter-bg: color-mod(var(--color-panel-bg) tint(40%))
+
+  --color-panel-light-border-light: color-mod(var(--color-panel-light-bg) tint(10%))
+  --color-panel-light-border-dark: color-mod(var(--color-panel-light-bg) shade(15%))
+  --color-panel-border-light: color-mod(var(--color-panel-bg) tint(10%))
+  --color-panel-border-dark: color-mod(var(--color-panel-bg) shade(15%))
+
+  --color-control-bg: color-mod(var(--color-panel-bg) tint(12%))
+  --color-control-bg-hover: color-mod(var(--color-control-bg) tint(20%))
+  --color-control-bg-active: color-mod(var(--color-control-bg) tint(40%))
 
   --color-bg-body: rgb(43, 45, 66)
   --color-bg-light: color-mod(var(--color-bg-body) l(10%))
@@ -38,6 +43,7 @@
   --margin-md: 12px
   --margin-lg: 18px
   --margin-xl: 24px
+  --border-radius: 5px
 
 // extends
 %fluid-width
@@ -61,10 +67,5 @@
 .r09, .r10, .r20, .r50, .r99
   color: var(--darkGreen)
 
-img
-  max-width: 100% !important
-  min-width: auto !important
-
-blockquote
-  background-color: var(--color-panel-light-bg)
-  padding: var(--margin-md) var(--margin-lg)
+%box-shadow
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)

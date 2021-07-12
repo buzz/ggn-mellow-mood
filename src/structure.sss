@@ -58,7 +58,15 @@
   width: 65% !important
 
 .box
+  @extend %box-shadow
   background: var(--color-panel-bg)
+  border-bottom-color: var(--color-panel-border-dark)
+  border-left-color: var(--color-panel-border-light)
+  border-radius: var(--border-radius)
+  border-right-color: var(--color-panel-border-dark)
+  border-style: solid
+  border-top-color: var(--color-panel-border-light)
+  border-width: 1px
   margin: 0 0 var(--margin-lg) !important
   padding: var(--margin-md)
   width: 100% !important
