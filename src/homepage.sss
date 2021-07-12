@@ -5,7 +5,7 @@
 
   .sidebar
     #freeleech li.group_torrent
-      @extend %font-size-sm
+      font-size: var(--font-size-sm)
       color: inherit !important
 
     #torrents &
@@ -16,10 +16,15 @@
     &#upcoming_calendar
 
       .day-label
-        @extend %font-size-base
+        font-size: var(--font-size-base)
+        text-decoration: none
 
       .event_end_time
         float: right
+        font-size: var(--font-size-sm)
+
+      .event_day
+        font-size: var(--font-size-sm)
 
     &#slides
       ul li
@@ -50,7 +55,7 @@
     &#blogposts
 
       ul > li > a
-        @extend %font-size-sm
+        font-size: var(--font-size-sm)
 
     .head
       #markread
@@ -63,6 +68,6 @@
         width: 18px
 
       .newsdate, .time
-        @extend %font-size-sm
+        font-size: var(--font-size-sm)
         float: right
         margin-left: var(--margin-md)

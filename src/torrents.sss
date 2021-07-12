@@ -6,6 +6,9 @@
 
     h3
       border-bottom: none !important
+      left: 0
+      margin-bottom: var(--margin-md)
+      width: 100%
 
     .box
       > table
@@ -90,15 +93,15 @@
           &#displayname
 
             #groupplatform, #groupname
-              @extend %font-size-base
+              font-size: var(--font-size-base)
 
               a
-                @extend %font-size-lg
+                font-size: var(--font-size-lg)
 
       &.group_torrent
 
         td
-          @extend %font-size-sm
+          font-size: var(--font-size-sm)
           padding: 0 var(--margin-md) !important
 
           &.edition_info
@@ -119,7 +122,7 @@
   .torrent_details
 
     .groupoptions:hover
-      @extend %font-size-sm
+      font-size: var(--font-size-sm)
       width: auto
 
       a
