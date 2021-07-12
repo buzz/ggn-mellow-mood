@@ -5,13 +5,13 @@ input,
 select,
 textarea
   border: 1px solid var(--dark-liver)
-  background-color: var(--lightest-liver)
+  background-color: var(--control-bg)
 
   &:hover
-    background-color: var(--brighter-liver)
+    background-color: var(--control-bg-hover)
 
   &:focus
-    background-color: var(--brightest-liver)
+    background-color: var(--control-bg-active)
 
   &::placeholder
     color: var(--color-bg-light)
@@ -25,7 +25,7 @@ textarea
 select
 
   option, optgroup
-    background-color: var(--brightest-liver) !important
+    background-color: var(--control-bg-active) !important
 
 form
   table

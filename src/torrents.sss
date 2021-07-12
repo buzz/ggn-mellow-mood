@@ -1,4 +1,4 @@
-#torrents
+body#torrents
 
   #content form[name="filter"]
     margin: 0 !important
@@ -17,6 +17,9 @@
       &.cat_list
         margin: var(--margin-md) 0
 
+  .sidebar
+    padding-left: 0 !important
+
   .box
     &.screenshots_div img
       max-width: 150px !important
@@ -30,6 +33,7 @@
   .groupoptions
     right: 0 !important
     top: 27px !important
+    width: 172px !important
 
   .main_column .torrent_table tr.group_torrent td.edition_info
     background-color: var(--light-liver) !important
@@ -121,25 +125,28 @@
 
   .torrent_details
 
-    .groupoptions:hover
+    .groupoptions
       font-size: var(--font-size-sm)
-      width: auto
 
-      a
-        background-color: var(--light-liver) !important
-        border-bottom: none !important
-        border-left: 1px solid var(--dark-liver)
-        border-right: 1px solid var(--dark-liver)
-        white-space: nowrap
+      &:hover
+        width: auto
 
-        &:first-of-type
-          border-top: 1px solid var(--dark-liver)
+        a
+          background-color: var(--light-liver) !important
+          border-bottom: none !important
+          border-left: 1px solid var(--dark-liver)
+          border-right: 1px solid var(--dark-liver)
+          text-decoration: none
+          white-space: nowrap
 
-        &:last-of-type
-          border-bottom: 1px solid var(--dark-liver) !important
+          &:first-of-type
+            border-top: 1px solid var(--dark-liver)
 
-        &:hover
-          background-color: var(--lighter-liver) !important
+          &:last-of-type
+            border-bottom: 1px solid var(--dark-liver) !important
+
+          &:hover
+            background-color: var(--lighter-liver) !important
 
     .torrent_table
 
